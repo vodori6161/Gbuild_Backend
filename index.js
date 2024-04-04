@@ -149,7 +149,7 @@ console.log(rooms);
   res.status(200).json(rooms[0].rooms.split(','));
 })
 
-/*
+/****** Socket Chat App*******/
 const CHAT_BOT = 'ChatBot';
 
 const io = new Server(server, {
@@ -191,7 +191,7 @@ const { data:msg, error } =  supabase
 
 });
 server.listen(4000, () => 'Server is running on port 3000');
-*/
+
 
 app.get('/driveFiles', async (req, res)=> {
   
